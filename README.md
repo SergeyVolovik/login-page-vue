@@ -10,11 +10,7 @@
 - [Tech Stack](#tech-stack)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Commands](#commands)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Prerequisites](#prerequisites)
 
 ## Overview
 
@@ -44,5 +40,5 @@ This project is a responsive login page built with **Vue 3**, **Vite**, and **Ta
 
 Ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (v14 or higher)
+- [Node.js](https://nodejs.org/) (v18 or higher)
 - npm
