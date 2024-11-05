@@ -1,1 +1,1 @@
-export { ConditionContent, Placeholder, SwipeCard } from './features';
+export { ConditionContent, Placeholder } from './features';
