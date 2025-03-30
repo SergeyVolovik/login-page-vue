@@ -1,6 +1,9 @@
 <template>
   <div class="w-screen h-screen flex flex-col gap-4 items-start">
-    <ConditionContent :isLoading="isLoading" :isVisible="!!loginFormData.userName">
+    <ConditionContent
+      :isLoading="isLoading"
+      :isVisible="!!loginFormData.userName"
+    >
       <template #content>
         <nav class="w-full p-2 flex justify-between items-center gap-4">
           <h1>Page: Hello, {{ loginFormData.userName }}</h1>
@@ -13,7 +16,9 @@
         </nav>
       </template>
       <template #placeholder>
-        <Placeholder :variant="PLACEHOLDER.SECTION.VARIANT">{{ PLACEHOLDER.SECTION.TEXT }}</Placeholder>
+        <Placeholder :variant="PLACEHOLDER.SECTION.VARIANT">
+          {{ PLACEHOLDER.SECTION.TEXT }}
+        </Placeholder>
       </template>
     </ConditionContent>
   </div>

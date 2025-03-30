@@ -1,6 +1,9 @@
 <template>
   <div class="h-screen flex flex-col items-center justify-center">
-    <form class="w-full max-w-[25rem] p-4 flex flex-col gap-4" @submit.prevent="logInApp">
+    <form
+      class="w-full max-w-[25rem] p-4 flex flex-col gap-4"
+      @submit.prevent="logInApp"
+    >
       <h1 class="text-3xl">Login</h1>
       <div class="flex flex-col gap-2">
         <FloatLabel class="w-full mt-6 flex flex-col gap-4">
@@ -14,7 +17,12 @@
           />
           <label :for="LOGIN_FIELD_NAMES.USER_NAME">User Name</label>
         </FloatLabel>
-        <Message v-if="errors.userName" severity="error">{{ errors.userName }}</Message>
+        <Message
+          v-if="errors.userName"
+          severity="error"
+        >
+          {{ errors.userName }}
+        </Message>
         <FloatLabel class="w-full mt-6 flex flex-col gap-4">
           <Password
             v-model="password"
@@ -29,9 +37,21 @@
           />
           <label :for="LOGIN_FIELD_NAMES.PASSWORD">Password</label>
         </FloatLabel>
-        <Message v-if="errors.password" severity="error">{{ errors.password }}</Message>
+        <Message
+          v-if="errors.password"
+          severity="error"
+        >
+          {{ errors.password }}
+        </Message>
       </div>
-      <Button :loading="isLoading" id="login-button" class="mt-4" type="submit" label="Login" icon="pi pi-sign-in" />
+      <Button
+        id="login-button"
+        :loading="isLoading"
+        class="mt-4"
+        type="submit"
+        label="Login"
+        icon="pi pi-sign-in"
+      />
     </form>
   </div>
 </template>

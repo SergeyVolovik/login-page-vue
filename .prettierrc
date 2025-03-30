@@ -6,8 +6,17 @@
   "bracketSpacing": true,
   "arrowParens": "always",
   "htmlWhitespaceSensitivity": "ignore",
-  "endOfLine": "lf",
+  "endOfLine": "auto",
+  "proseWrap": "always",
   "trailingComma": "none",
   "plugins": ["prettier-plugin-organize-imports"],
-  "ignore": ["node_modules", "dist"]
+  "ignore": ["node_modules", "dist"],
+  "overrides": [
+    {
+      "files": "*.vue",
+      "options": {
+        "singleAttributePerLine": true
+      }
+    }
+  ]
 }

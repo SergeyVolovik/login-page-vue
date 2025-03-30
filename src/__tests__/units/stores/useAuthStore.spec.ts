@@ -53,7 +53,10 @@ describe('useAuthStore', () => {
   });
 
   it('returns error if password is incorrect and username is admin', () => {
-    const result = store.setLoginFormData({ userName: 'admin', password: 'wrongPassword' });
+    const result = store.setLoginFormData({
+      userName: 'admin',
+      password: 'wrongPassword'
+    });
 
     expect(result).toEqual({
       errors: [{ password: ERROR_MESSAGES.PASSWORD }]
@@ -62,7 +65,10 @@ describe('useAuthStore', () => {
   });
 
   it('returns error if username is incorrect and password is correct', () => {
-    const result = store.setLoginFormData({ userName: 'wrongUser', password: 'password' });
+    const result = store.setLoginFormData({
+      userName: 'wrongUser',
+      password: 'password'
+    });
 
     expect(result).toEqual({
       errors: [{ userName: ERROR_MESSAGES.USERNAME }]
@@ -71,7 +77,10 @@ describe('useAuthStore', () => {
   });
 
   it('returns errors if both username and password are incorrect', () => {
-    const result = store.setLoginFormData({ userName: 'wrongUser', password: 'wrongPassword' });
+    const result = store.setLoginFormData({
+      userName: 'wrongUser',
+      password: 'wrongPassword'
+    });
 
     expect(result).toEqual({
       errors: [{ userName: ERROR_MESSAGES.USERNAME, password: ERROR_MESSAGES.PASSWORD }]

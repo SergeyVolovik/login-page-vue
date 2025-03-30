@@ -65,5 +65,10 @@ export const useAuthStore = defineStore('auth', () => {
     clearLocalStorage(LOGIN_FORM_DATA_KEY);
   };
 
-  return { loginFormData, isAuthenticated, setLoginFormData, $resetLoginFormData };
+  return {
+    loginFormData,
+    isAuthenticated,
+    setLoginFormData,
+    $resetLoginFormData
+  };
 });

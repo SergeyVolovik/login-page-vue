@@ -29,7 +29,6 @@ describe('Login.vue', () => {
 
   it('renders the login form', () => {
     expect(wrapper.find('h1').text()).toBe('Login');
-    console.log(wrapper.html());
     expect(wrapper.find(`[inputId="${LOGIN_FIELD_NAMES.USER_NAME}"]`).exists()).toBe(true);
     expect(wrapper.find(`[inputId="${LOGIN_FIELD_NAMES.PASSWORD}"]`).exists()).toBe(true);
     expect(wrapper.find('button[id="login-button"]').exists()).toBe(true);

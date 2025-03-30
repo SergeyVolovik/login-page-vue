@@ -17,7 +17,6 @@ describe('ConditionContent', () => {
       }
     });
     const spinner = wrapper.findComponent(ProgressSpinner);
-    console.log(spinner);
 
     expect(spinner.exists()).toBe(true);
   });
