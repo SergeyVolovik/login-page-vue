@@ -8,5 +8,6 @@
   "htmlWhitespaceSensitivity": "ignore",
   "endOfLine": "lf",
   "trailingComma": "none",
+  "plugins": ["prettier-plugin-organize-imports"],
   "ignore": ["node_modules", "dist"]
 }

@@ -20,13 +20,13 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
 import { storeToRefs } from 'pinia';
+import { onMounted } from 'vue';
 
-import { PLACEHOLDER } from '@/constants';
 import { ConditionContent, Placeholder } from '@/components';
-import { useAuthStore } from '@/stores';
+import { PLACEHOLDER } from '@/constants';
 import { useLoader, useLoginAction } from '@/hooks';
+import { useAuthStore } from '@/stores';
 
 const { handleLogOutClick } = useLoginAction();
 const { isLoading, setLoading } = useLoader();

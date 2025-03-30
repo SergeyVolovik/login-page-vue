@@ -37,12 +37,12 @@
 </template>
 
 <script setup lang="ts">
-import { useForm, useField } from 'vee-validate';
+import { useField, useForm } from 'vee-validate';
 
 import { LOGIN_FIELD_NAMES } from '@/constants';
-import { useAuthStore } from '@/stores';
-import { ILoginData } from '@/interfaces';
 import { useLoader, useLoginAction } from '@/hooks';
+import { ILoginData } from '@/interfaces';
+import { useAuthStore } from '@/stores';
 import { loginValidationSchema } from '@/validation';
 
 const { setLoginFormData } = useAuthStore();
