@@ -1,19 +1,19 @@
 import { createPinia } from 'pinia';
 
-import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 import Button from 'primevue/button';
-import Password from 'primevue/password';
-import InputText from 'primevue/inputtext';
-import Skeleton from 'primevue/skeleton';
-import InputGroup from 'primevue/inputgroup';
-import FloatLabel from 'primevue/floatlabel';
-import Message from 'primevue/message';
-import ProgressSpinner from 'primevue/progressspinner';
-import ToastService from 'primevue/toastservice';
 import Card from 'primevue/card';
+import PrimeVue from 'primevue/config';
+import FloatLabel from 'primevue/floatlabel';
+import InputGroup from 'primevue/inputgroup';
+import InputText from 'primevue/inputtext';
+import Message from 'primevue/message';
+import Password from 'primevue/password';
+import ProgressSpinner from 'primevue/progressspinner';
 import Rating from 'primevue/rating';
+import Skeleton from 'primevue/skeleton';
 import Tag from 'primevue/tag';
+import ToastService from 'primevue/toastservice';
 
 import router from '@/router';
 

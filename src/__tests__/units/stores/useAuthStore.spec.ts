@@ -1,9 +1,9 @@
-import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { createPinia, setActivePinia } from 'pinia';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { ERROR_MESSAGES } from '@/constants';
-import { useAuthStore } from '@/stores';
 import { useLocalStorage } from '@/hooks';
+import { useAuthStore } from '@/stores';
 
 vi.mock('@/hooks', () => ({
   useLocalStorage: vi.fn(() => ({

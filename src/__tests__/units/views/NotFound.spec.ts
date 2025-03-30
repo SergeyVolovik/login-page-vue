@@ -1,7 +1,7 @@
-import { useRouter } from 'vue-router';
-import { describe, it, vi, beforeEach, expect, Mock } from 'vitest';
 import { mount } from '@vue/test-utils';
 import Button from 'primevue/button';
+import { beforeEach, describe, expect, it, Mock, vi } from 'vitest';
+import { useRouter } from 'vue-router';
 
 import { NotFound } from '@/views';
 

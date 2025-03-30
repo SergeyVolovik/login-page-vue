@@ -7,7 +7,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "format": "prettier --write '**/*.{vue,html,scss}'",
+    "format": "prettier --write '**/*.{js,ts,vue,html,scss}'",
     "format:svg": "prettier --write '**/*.svg' --parser=html",
     "test:unit": "vitest --environment jsdom --ui --coverage.enabled=true",
     "test-coverage": "vitest run --coverage"
