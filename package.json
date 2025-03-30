@@ -11,6 +11,7 @@
     "format:svg": "prettier --write '**/*.svg' --parser=html",
     "format:lint": "prettier --write '**/*.{js,ts,vue,html,scss}' && eslint . --fix",
     "test:unit": "vitest --environment jsdom --coverage",
+    "test:ui": "vitest --ui",
     "test-coverage": "vitest run --coverage"
   },
   "dependencies": {
